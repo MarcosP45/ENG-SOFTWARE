@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contador de caracteres</title>
+    <link rel="stylesheet" href="syle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Contador de caracteres</h2>
+		<textarea cols="50"rows="10" placeholder="Digite aqui"></textarea>
+        <h3>caracteres: <span>0</span></h3>
+	</div>
+</body>
+<script type="text/javascript">
+	let textarea= document.querySelector('textarea'),
+	character_in=document.querySelector('h3 span');
+
+	textarea.onkeyup=function(){
+			// character_in.innerText=this.value.length or
+			character_in.innerText=textarea.value.length
+		}
+	</script>
+</html>
